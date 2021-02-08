@@ -1,0 +1,51 @@
+body{
+    background-color: #F9E7A2;
+}
+
+body *{
+    font-family: Cursive;
+}
+
+.header{
+    text-align: center;
+    font-family: Cursive;
+    color: #454134
+}
+
+.header-bar{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #EAD68C;
+    background-color: #EAD68C;
+    padding: 0;
+}
+
+.header-bar button{
+    background-color: #EAD68C;
+    border: none;
+    box-shadow:#A69392;
+    cursor: pointer;
+    height: 30px;
+    padding: 0 35px;
+    color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.courts, .save-hour, .siyando-shop{
+    border-bottom: 2px solid #B6A150;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;}
+
+.courts:hover, .save-hour:hover, .siyando-shop:hover{
+    background-color: #BCA758;
+}
+.header-bar button:hover{
+    background-color: #E0CF8E;
+    color: black;
+}
+
+.header-bar button:focus{
+    outline: none;
+    background-color: #DFCC85;
+}
