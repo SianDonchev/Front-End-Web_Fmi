@@ -1,15 +1,22 @@
 body{
     background-color: #F9E7A2;
+    padding: 0 30px;
 }
 
 body *{
     font-family: Cursive;
 }
 
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header{
     text-align: center;
     font-family: Cursive;
-    color: #454134
+    color: #454134;
 }
 
 .header-bar{
@@ -18,6 +25,7 @@ body *{
     border: 1px solid #EAD68C;
     background-color: #EAD68C;
     padding: 0;
+    border-radius: 15px;
 }
 
 .header-bar button{
@@ -41,11 +49,18 @@ body *{
     background-color: #BCA758;
 }
 .header-bar button:hover{
-    background-color: #E0CF8E;
+    background-color: #DFCC85;
     color: black;
 }
 
 .header-bar button:focus{
     outline: none;
-    background-color: #DFCC85;
+    background-color: #E0CF8E;
+}
+
+.content{
+    height: 500px;
+    background-color: #EAD68C;
+    margin: 5px 0;
+    border-radius: 15px;
 }
