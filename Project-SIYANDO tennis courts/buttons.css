@@ -1,0 +1,43 @@
+.header-bar button{
+    height: 30px;
+    padding: 0 55px;
+    color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header-bar .btn-wrap{
+    border-bottom: 2px solid #B6A150;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header-bar .btn-wrap:hover{
+    border-bottom: 2px solid #6E643C;
+}
+
+.btn-wrap button{
+    background-color: #EAD68C;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-wrap button:hover{
+    background-color: #DFCC85;
+    color: black;
+}
+
+.btn-wrap button:focus{
+    outline: none;
+    background-color: #E0CF8E;
+}
+
+.side-bar .btn-wrap:hover{
+    border-left: 2px solid #6E643C;
+}
+
+.rackets.btn-wrap{
+    position: relative;
+    top: 15px;
+}
+

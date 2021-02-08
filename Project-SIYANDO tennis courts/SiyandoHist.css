@@ -28,39 +28,10 @@ body *{
     border-radius: 15px;
 }
 
-.header-bar button{
-    background-color: #EAD68C;
-    border: none;
-    box-shadow:#A69392;
-    cursor: pointer;
-    height: 30px;
-    padding: 0 35px;
-    color: black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.courts, .save-hour, .siyando-shop{
-    border-bottom: 2px solid #B6A150;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;}
-
-.courts:hover, .save-hour:hover, .siyando-shop:hover{
-    background-color: #BCA758;
-}
-.header-bar button:hover{
-    background-color: #DFCC85;
-    color: black;
-}
-
-.header-bar button:focus{
-    outline: none;
-    background-color: #E0CF8E;
-}
-
 .content{
     height: 500px;
     background-color: #EAD68C;
     margin: 5px 0;
     border-radius: 15px;
 }
+

@@ -1,0 +1,31 @@
+.siyando-shop-content{
+    display: flex;
+    height: 100%;
+}
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    border-right: 2px solid #B6A150;
+}
+
+.side-bar .btn-wrap{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 2px solid #B6A150;
+    height: 50px;
+    width: 99%;
+    display:inline-block
+}
+
+.rackets-shop-btn{
+    width:99%;
+    height: 50px;
+
+}
+
+
+.side-bar .btn-wrap{
+    margin-top: 5px;
+}
