@@ -29,9 +29,114 @@ body *{
 }
 
 .content{
-    height: 500px;
+    height: 700px;
     background-color: #EAD68C;
     margin: 5px 0;
     border-radius: 15px;
 }
 
+.content .info,.content .courts-images,.content .info-rank{
+    border-radius: 15px;
+}
+
+.siyando-hist-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.courts-first-row, .courts-second-row{
+    display: flex;
+    justify-content: center;
+
+}
+
+.siyando-hist-content img{
+    width: 400px;
+    height: 230px;
+}
+
+.courts{
+    display: flex;
+}
+
+.courts-images{
+    display: flex;
+    flex-direction: column;
+}
+
+.court{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.court label{
+    text-align: center;
+}
+
+.court .tooltip {
+    visibility: hidden;
+    width: 400px;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .court:hover .tooltip {
+    visibility: visible;
+  }
+
+  .court:hover img{
+      opacity: 0.2;
+  }
+
+  .info{
+      width: 300px;
+  }
+
+.info{
+    background-color: #E2C692;
+}
+
+.info h2{
+    background-color: #D8BD8B;
+}
+
+  .info *{
+      text-align: center;
+  }
+
+  div.tournament-info{
+      background-color: #D8BD8B;
+  }
+
+  div.tournament-info h4{
+      background-color: #E2C692;
+  }
+
+  div.tournament-info li{
+      border-top: 1px solid #E2C692;
+  }
+
+h2{
+    text-align: center;
+}
+
+.info-rank{
+    background-color: #E2C692;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+ol li{
+    margin: 10px 0;
+    background-color: #D8BD8B;
+}

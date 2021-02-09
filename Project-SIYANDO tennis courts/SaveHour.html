@@ -5,6 +5,8 @@
       <link rel="stylesheet" href="SiyandoHist.css"/>
       <link rel="stylesheet" href="SiyandoShop.css"/>
       <link rel="stylesheet" href="buttons.css"/>
+      <link rel="stylesheet" href="SaveHour.css"/>
+
    </head>
    <body>
       <div>
@@ -13,21 +15,39 @@
       <div class="page">
          <div class="header-bar">
             <span class="courts btn-wrap"> 
-                <button onclick="location.href='./SiyandoHist.html'"">Кортове</button>
+                <button onclick="location.href='./SiyandoHist.html'">Кортове</button>
             </span>
             <span class="save-hour btn-wrap"> 
-               <button onclick="location.href='./SaveHour.html'"">Запиши час</button>
+               <button onclick="location.href='./SaveHour.html'">Запиши час</button>
             </span>
             <span class="siyando-shop btn-wrap"> 
-                <button onclick="location.href='./SiyandoShop.html'"">СияндоШОП</button>
+                <button onclick="location.href='./SiyandoShop.html'">СияндоШОП</button>
             </span>
          </div>
          <div class="content">
             <div class="save-hour-content">
-                
+            <form class="save-hour-form" id="save-hour-form">
+                <h2 class="header-submit-form">Форма за запазване на час</h2>
+
+                <div class="errors" id="errors"></div>
+
+               <label for="court-number"><b>Корт №</b></label>
+               <input type="number" min="0" name="courts" placeholder="Въведете номера на корта">
+               <label for="day"><b>Ден</b></label>
+               <input type="number" min="0" name="day" placeholder="Въведете ден от седмицата">
+               <label for="hour"><b>Час</b></label>
+               <input type="number" min="0" name="hour" placeholder="Въведете кръгъл час">
+               <label for="name"><b>Вашето име</b></label>
+               <input type="text" name="personalName" placeholder="Въведете име">
+               <div class="submit-me btn-wrap">
+                <button type="submit" class="submit-me-btn">Запиши ме</button>
+            </div>
+            </form>
             </div>
          </div>
       </div>
+
+      <script src="scripts/saveHourForm_controller.js"></script>
    </body>
 
 </html>

@@ -1,4 +1,4 @@
-.header-bar button{
+.header-bar button, .save-hour-form button{
     height: 30px;
     padding: 0 55px;
     color: black;
@@ -6,13 +6,15 @@
     border-top-right-radius: 5px;
 }
 
-.header-bar .btn-wrap{
+.header-bar .btn-wrap, 
+.save-hour-form .btn-wrap{
     border-bottom: 2px solid #B6A150;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.header-bar .btn-wrap:hover{
+.header-bar .btn-wrap:hover, 
+.save-hour-form .btn-wrap:hover{
     border-bottom: 2px solid #6E643C;
 }
 
@@ -41,3 +43,11 @@
     top: 15px;
 }
 
+
+.info-rank button{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #6E643C;
+    align-self: flex-end;
+    margin: 20px 0;
+}

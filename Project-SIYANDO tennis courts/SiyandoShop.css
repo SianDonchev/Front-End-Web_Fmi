@@ -1,4 +1,4 @@
-.siyando-shop-content{
+.siyando-shop-all{
     display: flex;
     height: 100%;
 }
@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: column;
     width:200px;
+}
+
+.siyando-shop-content{
     border-right: 2px solid #B6A150;
 }
 
@@ -25,7 +28,83 @@
 
 }
 
-
 .side-bar .btn-wrap{
     margin-top: 5px;
+}
+
+.products{
+    display: flex;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 35px;
+}
+
+.product label{
+    text-align: center;
+}
+
+.price{
+    font-weight: 600;
+    text-align: center;
+}
+
+img{
+    width:330px;
+    height:400px;
+}
+
+.product .tooltip {
+    visibility: hidden;
+    width: 330px;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+.product:hover .tooltip {
+    visibility: visible;
+}
+
+.tooltip ul{
+    list-style-type: none;
+}
+
+.tooltip button{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #6E643C;
+    align-self: flex-end;
+    margin: 20px 0;
+    border: none;
+    background-color: #F9E7A2;
+    opacity: 0.8;
+    border-bottom: 2px solid #B6A150;
+}
+
+.tooltip button:hover{
+    background-color: #EAD68C;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.tooltip button:focus{
+    outline: none;
+    background-color: #6E643C;
+    color: white;
+}
+
+
+.product:hover img{
+    opacity: 0.2;
+    cursor: pointer;
 }
