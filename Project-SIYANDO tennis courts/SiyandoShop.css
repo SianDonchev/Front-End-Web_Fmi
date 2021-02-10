@@ -202,4 +202,9 @@ img{
     .product-to-confirm{
         flex-direction: column;
     }
+
+    .product-to-confirm img{
+        width:260px;
+        height:330px;
+    }
 }
