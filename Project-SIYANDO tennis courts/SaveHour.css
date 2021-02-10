@@ -1,3 +1,7 @@
+.header-bar .save-hour.btn-wrap button{
+    background-color: #E0CF8E;
+}
+
 .save-hour-form, .sign-up-tournament-form{
     display: flex;
     flex-direction: column;

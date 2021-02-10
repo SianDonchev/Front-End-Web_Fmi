@@ -1,5 +1,10 @@
+.header-bar .siyando-shop.btn-wrap button{
+    background-color: #E0CF8E;
+}
+
 .siyando-shop-all{
     display: flex;
+    flex-direction: row;
     height: 100%;
 }
 
@@ -11,6 +16,7 @@
 
 .siyando-shop-content{
     border-right: 2px solid #B6A150;
+    border-top-right-radius: 15px;
 }
 
 .side-bar .btn-wrap{
@@ -34,6 +40,8 @@
 
 .products{
     display: flex;
+    flex-direction: row;
+    margin-top: 0;
 }
 
 .product{
@@ -79,9 +87,8 @@ img{
 
 .tooltip button{
     text-align: center;
-    width: 100%;
+    width: 330px;
     height: 100px;
-    width: 100%;
     border-bottom: 2px solid #6E643C;
     align-self: flex-end;
     margin: 20px 0;
@@ -110,3 +117,28 @@ img{
 }
 
 
+
+@media (max-width: 890px) {
+    .products{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+        
+    .siyando-shop-all{
+        flex-direction: column;
+    }
+
+    .siyando-shop-all img{
+        width: 250px;
+    }
+
+        
+    .product .tooltip,.product button{
+        width: 250px;
+    }
+
+    .side-bar{
+        width: 100%;
+    }
+
+}

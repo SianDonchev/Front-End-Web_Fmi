@@ -12,6 +12,7 @@
     border-bottom: 2px solid #B6A150;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    text-align: center;
 }
 
 .header-bar .btn-wrap:hover, 
