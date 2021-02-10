@@ -1,11 +1,11 @@
-.save-hour-form{
+.save-hour-form, .sign-up-tournament-form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px;
 }
 
-.save-hour-content input{
+.save-hour-content input, .sign-up-tournament input{
     background-color: #EAD68C;
     border: none;
     border-bottom: #B9AF89 1px solid;
@@ -16,12 +16,12 @@
 text-align: center;
 }
 
-.save-hour-content input:focus{
+.save-hour-content input:focus,.sign-up-tournament input:focus{
     outline: none;
     border-color: #9A937C;
 }
 
-.save-hour-content input:focus::placeholder{
+.save-hour-content input:focus::placeholder, .sign-up-tournament input:focus::placeholder{
     color: #A59E87;
 }
 

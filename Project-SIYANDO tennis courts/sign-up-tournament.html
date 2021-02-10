@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="SiyandoHist.css"/>
+      <link rel="stylesheet" href="SiyandoShop.css"/>
+      <link rel="stylesheet" href="buttons.css"/>
+      <link rel="stylesheet" href="SaveHour.css"/>
+
+   </head>
+   <body>
+      <div>
+         <h1 class="header">Siyando</h1>
+      </div>
+      <div class="page">
+         <div class="header-bar">
+            <span class="courts btn-wrap"> 
+                <button onclick="location.href='./SiyandoHist.html'">Кортове</button>
+            </span>
+            <span class="save-hour btn-wrap"> 
+               <button onclick="location.href='./SaveHour.html'">Запиши час</button>
+            </span>
+            <span class="siyando-shop btn-wrap"> 
+                <button onclick="location.href='./SiyandoShop.html'">СияндоШОП</button>
+            </span>
+         </div>
+         <div class="content">
+            <div class="sign-up-tournament">
+            <form class="sign-up-tournament-form" id="sign-up-tournament-form">
+                <h2 class="header-submit-form">Форма за заявка за турнир</h2>
+
+                <div class="errors" id="errors"></div>
+
+               <label for="email"><b>Имейл адрес</b></label>
+               <input type="text" name="email" placeholder="Въведете вашия имейл">
+               <label for="age"><b>Години</b></label>
+               <input type="number" min="0" name="age" placeholder="Въведете вашите години">
+               <label for="name"><b>Име</b></label>
+               <input type="text" min="0" name="personalName" placeholder="Въведете вашето име">
+            <div class="submit-me btn-wrap">
+                <button type="submit" class="submit-me-btn">Запиши ме</button>
+            </div>
+            </form>
+         </div>
+         </div>
+        </div>
+
+      <script src="scripts/sign-up-tournament.js"></script>
+   </body>
+
+</html>

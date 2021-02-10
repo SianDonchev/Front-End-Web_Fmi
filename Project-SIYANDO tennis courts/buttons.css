@@ -1,4 +1,4 @@
-.header-bar button, .save-hour-form button{
+.header-bar button, .save-hour-form button, .sign-up-tournament-form button{
     height: 30px;
     padding: 0 55px;
     color: black;
@@ -7,14 +7,16 @@
 }
 
 .header-bar .btn-wrap, 
-.save-hour-form .btn-wrap{
+.save-hour-form .btn-wrap,
+.sign-up-tournament-form .btn-wrap{
     border-bottom: 2px solid #B6A150;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .header-bar .btn-wrap:hover, 
-.save-hour-form .btn-wrap:hover{
+.save-hour-form .btn-wrap:hover
+.sign-up-tournament-form .btn-wrap:hover{
     border-bottom: 2px solid #6E643C;
 }
 
@@ -38,7 +40,7 @@
     border-left: 2px solid #6E643C;
 }
 
-.rackets.btn-wrap{
+.rackets.btn-wrap, .balls.btn-wrap, .bags.btn-wrap{
     position: relative;
     top: 15px;
 }

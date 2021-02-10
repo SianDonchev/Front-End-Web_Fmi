@@ -22,7 +22,7 @@
     display:inline-block
 }
 
-.rackets-shop-btn{
+.side-shop-btn{
     width:99%;
     height: 50px;
 
@@ -108,3 +108,5 @@ img{
     opacity: 0.2;
     cursor: pointer;
 }
+
+

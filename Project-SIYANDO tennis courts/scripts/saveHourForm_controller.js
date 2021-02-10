@@ -1,21 +1,13 @@
+'use strict';
+
+
 const saveHourForm = document.getElementById("save-hour-form");
 const errorElement = document.getElementById("errors");
 
 const courtElement = document.querySelector("[name=courts]");
 const hourElement = document.querySelector("[name=hour]");
 const dayElement = document.querySelector("[name=day]");
-
-
-/*<label for="court-number"><b>Корт №</b></label>
-               <input type="number" min="0" name="courts" placeholder="Въведете номера на корта">
-               <label for="month"><b>Месец</b></label>
-               <input type="number" min="0" name="month" placeholder="Въведете номера на месец">
-               <label for="day"><b>Дата</b></label>
-               <input type="number" min="0" name="day" placeholder="Въведете ден от месеца">
-               <label for="hour"><b>Час</b></label>
-               <input type="number" min="0" name="hour" placeholder="Въведете кръгъл час">
-               <label for="telephone-number"><b>Телефонен номер</b></label>
-               <input type="text" name="tel-number" placeholder="Въведете телефонен номер">*/
+const nameElement = document.querySelector("[name=personalName]");
 
 debugger;
 
@@ -33,7 +25,7 @@ const validateCourt = (court) => {
       return true;
     } else {
       errorElement.innerText = "Моля въведете валиден час.";
-      courtElement.style.borderBottom = "2px solid red";
+      hourElement.style.borderBottom = "2px solid red";
     }
   }
   
@@ -41,8 +33,8 @@ const validateCourt = (court) => {
     if (day > 0 && day < 8) {
       return true;
     } else {
-      errorElement.innerText = "Моля въведете валидна ден.";
-      courtElement.style.borderBottom = "2px solid red";
+      errorElement.innerText = "Моля въведете валиден ден.";
+      dayElement.style.borderBottom = "2px solid red";
     }
   }
 
@@ -64,6 +56,7 @@ const validateCourt = (court) => {
           courtElement.value = "";
           hourElement.value = "";
           dayElement.value = "";
+          nameElement.value = "";
         }
         
       });
