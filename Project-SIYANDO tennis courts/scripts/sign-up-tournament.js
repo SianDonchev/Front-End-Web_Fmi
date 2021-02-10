@@ -1,6 +1,6 @@
 'use strict';
 
-
+function checkData(){
 const signUpTournament = document.getElementById("sign-up-tournament-form");
 const errorElement = document.getElementById("errors");
 
@@ -68,3 +68,4 @@ const validateName = (name) => {
         
       });
   }
+}

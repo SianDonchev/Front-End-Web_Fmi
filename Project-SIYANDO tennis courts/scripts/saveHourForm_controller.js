@@ -1,6 +1,6 @@
 'use strict';
 
-
+function checkData(){
 const saveHourForm = document.getElementById("save-hour-form");
 const errorElement = document.getElementById("errors");
 
@@ -8,6 +8,7 @@ const courtElement = document.querySelector("[name=courts]");
 const hourElement = document.querySelector("[name=hour]");
 const dayElement = document.querySelector("[name=day]");
 const nameElement = document.querySelector("[name=personalName]");
+
 
 debugger;
 
@@ -61,3 +62,4 @@ const validateCourt = (court) => {
         
       });
   }
+}
