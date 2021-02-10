@@ -116,7 +116,65 @@ img{
     cursor: pointer;
 }
 
+.confirm {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .confirm-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9E7A2;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
 
+.product-to-confirm{
+    display: flex;
+    flex-direction: row;
+}
+
+.fields-to-confirm{
+    display: flex;
+    flex-direction: column;
+}
+
+  .close{
+      align-self: flex-end;
+      cursor: pointer;
+  }
+
+  .confirm .product .buy-product{
+      display: none;
+  }
+
+.confirm input{
+        background-color: #EAD68C;
+        border: none;
+        border-bottom: #B9AF89 1px solid;
+        margin: 10px 0;
+}
+
+.confirm input:focus{
+    outline: none;
+    border-color: #9A937C;
+}
+  
+.buttons-confirm{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 @media (max-width: 890px) {
     .products{
@@ -140,5 +198,8 @@ img{
     .side-bar{
         width: 100%;
     }
-
+    
+    .product-to-confirm{
+        flex-direction: column;
+    }
 }
