@@ -1,0 +1,25 @@
+{
+  "days": {
+    "1": {
+	  "willRain": "false"
+    },
+	"2": {
+	  "willRain": "false"
+    },
+	"3": {
+	  "willRain": "true"
+    },
+	"4": {
+	  "willRain": "false"
+    },
+	"5": {
+	  "willRain": "false"
+    },
+	"6": {
+	  "willRain": "true"
+    },
+	"7": {
+	  "willRain": "false"
+    }
+  }
+}

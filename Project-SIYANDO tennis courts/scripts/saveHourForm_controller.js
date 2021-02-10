@@ -40,8 +40,7 @@ const validateCourt = (court) => {
   }
 
   if(saveHourForm){
-    saveHourForm.addEventListener("submit", event => {
-        event.preventDefault();
+
     
         const courtValue = courtElement.value;
         const hourValue = hourElement.value;
@@ -53,13 +52,24 @@ const validateCourt = (court) => {
       
         if (isCourtCorrect && isHourCorrect && isDayCorrect) {
           alert(`Записан е час успешно`);
-          
-          courtElement.value = "";
-          hourElement.value = "";
-          dayElement.value = "";
-          nameElement.value = "";
-        }
+    
         
-      });
+          
+            fetch("data.json").then((blob) => {
+              return blob.json();
+            })
+            .then((result) => {
+           
+              if(result.days[dayElement.value].willRain){
+                alert(`В запазения от вас ден има опасност от валежи`);
+                }
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+          
+        }   
+    
   }
 }
+
