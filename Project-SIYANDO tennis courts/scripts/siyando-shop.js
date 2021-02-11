@@ -1,24 +1,20 @@
 'use strict';
       
-// Get the modal
 window.onload = function(){
 var confirmForm = document.getElementById("confirm");
 
-// Get the button that opens the modal
 var btn1 = document.getElementsByClassName("buy-product")[0];
 
 var btn2 = document.getElementsByClassName("buy-product")[1];
 
 var btn3 = document.getElementsByClassName("buy-product")[2];
 
-// Get the <span> element that closes the modal
 var closeIcon = document.getElementsByClassName("close")[0];
 
 var cancelBtn = document.getElementsByClassName("cancel-btn")[0];
 
 var confirmBtn = document.getElementsByClassName("confirm-btn")[0];
 
-// When the user clicks the button, open the modal 
 btn1.onclick = function() {
     debugger;
     confirmForm.style.display = "block";
@@ -46,7 +42,7 @@ btn3.onclick = function() {
     document.getElementsByClassName("product-to-confirm")[0].appendChild(clonedProduct);
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close 
 closeIcon.onclick = function() {
     confirmForm.style.display = "none";
     document.getElementsByClassName("product-to-confirm")[0].removeChild(document.querySelector(".confirm-content .product"));
@@ -86,7 +82,7 @@ confirmBtn.onclick = function() {
         }
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside, close it
 window.onclick = function(event) {
     if (event.target == confirmForm) {
         confirmForm.style.display = "none";
