@@ -60,7 +60,7 @@ const validateCourt = (court) => {
             })
             .then((result) => {
            
-              if(result.days[dayElement.value].willRain){
+              if(result.days[dayElement.value].willRain == "true"){
                 alert(`В запазения от вас ден има опасност от валежи`);
                 }
             })
