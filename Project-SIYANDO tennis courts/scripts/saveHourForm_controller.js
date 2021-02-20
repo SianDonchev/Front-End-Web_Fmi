@@ -9,9 +9,6 @@ const hourElement = document.querySelector("[name=hour]");
 const dayElement = document.querySelector("[name=day]");
 const nameElement = document.querySelector("[name=personalName]");
 
-
-debugger;
-
 const validateCourt = (court) => {
     if (court > 0 && court < 5) {
       return true;
@@ -40,8 +37,6 @@ const validateCourt = (court) => {
   }
 
   if(saveHourForm){
-
-    
         const courtValue = courtElement.value;
         const hourValue = hourElement.value;
         const dayValue = dayElement.value;
@@ -52,9 +47,7 @@ const validateCourt = (court) => {
       
         if (isCourtCorrect && isHourCorrect && isDayCorrect) {
           alert(`Записан е час успешно`);
-    
-        
-          
+   
             fetch("data.json").then((blob) => {
               return blob.json();
             })

@@ -41,7 +41,6 @@ body *{
 @media (max-width: 890px) {
     .header-bar{
         flex-direction: column;
-    }
-    
+    } 
   }
 

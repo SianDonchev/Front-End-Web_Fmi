@@ -25,13 +25,12 @@
     border-left: 2px solid #B6A150;
     height: 50px;
     width: 99%;
-    display:inline-block
+    display:inline-block;
 }
 
 .side-shop-btn{
     width:99%;
     height: 50px;
-
 }
 
 .side-bar .btn-wrap{
